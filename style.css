@@ -81,10 +81,10 @@ body {
     z-index: 2;
     color: #fff;
     font-size: 105px;
-    font-weight: regular;
+    font-weight: 200;
     text-align: start;
-    letter-spacing: .505em;
-    line-height: 0.4;
+    letter-spacing: .450em;
+    line-height: 1.2em;
     white-space: pre-line;
     display: flex;
     flex-direction: column;
@@ -94,6 +94,56 @@ body {
     width: 100vw;
     pointer-events: none;
     font-family: 'Monument Extended', Arial, Helvetica, sans-serif;
+}
+
+.linha-direita {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-left: 325px;
+    vertical-align: baseline;
+    align-self: flex-start;
+    width: fit-content;
+}
+.linha-direita::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1000px; /* 32px padding, 8px gap, 1em para largura do 'a' */
+    height: 18px;
+    background: #1065ff;
+    border-radius: 0;
+    z-index: 0;
+    margin-left: 8px;
+    display: block;
+}
+
+.linha-esquerda {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 500px;
+    vertical-align: baseline;
+    align-self: flex-start;
+    width: fit-content;
+    letter-spacing: normal;
+}
+.linha-esquerda::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 18px;
+    background: #1065ff;
+    border-radius: 0;
+    z-index: 0;
+    margin-right: 120px;
+    display: block;
 }
 
 
