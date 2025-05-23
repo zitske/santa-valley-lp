@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Santa Valley</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header" id="mainHeader">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+    </header>
+    <section class="hero-section">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="assets/home-site-tratado.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo em HTML5.
+        </video>
+        <div class="hero-text">
+            <span>conexões</span><br>
+            <span>que</span><br>
+            <span>aceleram</span><br>
+            <span>a</span><br>
+            <span>inovação</span>
+        </div>
+        <!-- Conteúdo da seção pode ser adicionado aqui -->
+    </section>
+    <script>
+        let lastScroll = 0;
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.scrollY;
+            if (currentScroll === 0) {
+                header.style.background = 'rgba(0,0,0,0.3)';
+                header.style.transform = 'translateY(0)';
+            } else if (currentScroll > lastScroll) {
+                // Rolando para baixo: esconde o header
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Rolando para cima: mostra o header
+                header.style.background = 'rgba(0,0,0,0.7)';
+                header.style.transform = 'translateY(0)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>

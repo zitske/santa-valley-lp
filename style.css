@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Monument+Extended:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('assets/fonts/MonumentExtended-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('assets/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Monument Extended', Arial, Helvetica, sans-serif;
+    padding-top: 0;
+}
+
+.main-header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.3); /* Transparente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0 32px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #000;
+}
+
+.hero-section > *:not(.bg-video) {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 105px;
+    font-weight: regular;
+    text-align: start;
+    letter-spacing: .505em;
+    line-height: 0.4;
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100vw;
+    pointer-events: none;
+    font-family: 'Monument Extended', Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 600px) {
+    .hero-text {
+        font-size: 1.5rem;
+    }
+}
