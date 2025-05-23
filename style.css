@@ -146,9 +146,44 @@ body {
     display: block;
 }
 
-
+.main-footer {
+    width: 100vw;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-family: 'Monument Extended', Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 24px 8px 24px 8px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.04em;
+    z-index: 10;
+    font-weight: 400;
+}
+.main-footer a {
+    color: #1065ff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+.main-footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 @media (max-width: 600px) {
     .hero-text {
         font-size: 1.5rem;
+    }
+    .main-footer {
+        font-size: 0.7rem;
+        flex-direction: column;
+        gap: 2px;
+        padding: 16px 4px 16px 4px;
     }
 }
