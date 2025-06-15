@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>Santa Valley</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<>
     <header class="main-header" id="mainHeader">
         <img src="assets/logo.png" alt="Logo" class="logo">
     </header>
@@ -16,13 +20,13 @@
             Seu navegador não suporta vídeo em HTML5.
         </video>
         <h1 class="hero-text">
-            <span>conexões</span>
-            <span class="linha-esquerda">que</span>
-            <span>aceleram</span>
-            <span class="linha-direita">a</span>
-            <span>inovação</span>
+            <span>Por aqui</span>
+            <span class="linha-esquerda">temos sede</span>
+
+            <span class="linha-direita">de</span>
+            <span>mudança</span>
         </h1>
-       <!-- <div class="hero-text">
+        <!-- <div class="hero-text">
             <span>conexões</span><br>
             <span>que</span><br>
             <span>aceleram</span><br>
@@ -31,15 +35,34 @@
         </div>-->
         <!-- Conteúdo da seção pode ser adicionado aqui -->
     </section>
+    <section class="content-section">
+        <div class="content-extra">
+            <div class="vertical-text" style="display: flex; flex-direction: column; align-items: flex-start;">
+                <span>conexões</span>
+                <span>que aceleram</span>
+                <span>a inovação</span>
+            </div>
+            <div class="content">
+                <p>Onde a inovação ganha vida.
+                    A gente acredita no poder das conexões para <strong>transformar o mundo</strong>. Por isso, unimos pessoas, ideias,
+                    empresas e universidades para criar soluções que fazem a <strong>diferença</strong> — na tecnologia, nos negócios e
+                    na sociedade.
+                    Somos o encontro de quem sonha grande, constrói junto e acredita que <strong>inovação se faz em rede</strong>, com
+                    <strong>propósito e colaboração</strong>.</p>
+            </div>
+            <img class="corner-image" src="assets/logo.png" alt="Foto quadrada">
+        </div>
+    </section>
     <footer class="main-footer">
         <span>&copy; Santa Valley 2025</span> |
-        <span>Powered by: <a href="https://www.zitskegroup.com" target="_blank" rel="noopener">Zitske Group Corp.</a></span> |
+        <span>Powered by: <a href="https://www.zitskegroup.com" target="_blank" rel="noopener">Zitske Group
+                Corp.</a></span> |
         <span>Av. Santa Valley, 1234 - Vale do Silício, Brasil</span>
     </footer>
     <script>
         let lastScroll = 0;
         const header = document.getElementById('mainHeader');
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const currentScroll = window.scrollY;
             if (currentScroll === 0) {
                 header.style.background = 'rgba(0,0,0,0.3)';
@@ -55,5 +78,6 @@
             lastScroll = currentScroll;
         });
     </script>
-</body>
+    </body>
+
 </html>
